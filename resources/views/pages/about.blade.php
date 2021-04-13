@@ -13,7 +13,7 @@
             <P><a href="/">Revenir à la page d'acceuil</a></P>
 
             <footer>
-                <p>&copy; Copiryght {{ date('Y')}} &middot; <a href="/about-us">About us</a></p>
+                <p>&copy; Copiryght {{ date('Y')}} &middot; </p>
             </footer>
     </body>
 </html>
