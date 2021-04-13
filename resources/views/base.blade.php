@@ -5,12 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title')</title>       
+        <title>@yield('title', config('base.name'))</title>       
       
     </head>
     <body>
             @yield('content')
-
             <footer>
                 <p>&copy; Copiryght {{ date('Y')}} &middot; <a href="/about-us">About us</a></p>
             </footer>
