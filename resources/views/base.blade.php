@@ -11,7 +11,13 @@
     <body>
             @yield('content')
             <footer>
-                <p>&copy; Copiryght {{ date('Y')}} &middot; <a href="/about-us">About us</a></p>
+                
+                <p>&copy; Copiryght {{ date('Y')}} 
+                
+                    @if(!Route::is('about'))
+                    &middot; <a href="{{ route('about')}}">About us</a>
+                    @endif
+                </p>
             </footer>
     </body>
 </html>
